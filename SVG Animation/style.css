@@ -1,0 +1,121 @@
+@counter-style space-counter {
+    system: cyclic;
+    symbols: "\2705";
+    suffix: " ";
+}
+@counter-style clover {
+    system: cyclic;
+    symbols: "\2705";
+    suffix: " ";
+}
+
+@counter-style cross {
+    system: cyclic;
+    symbols: "\274C";
+    suffix: " ";
+    
+}
+
+ol li {
+    list-style-type: clover;
+}
+
+li {
+    text-align: left;
+    list-style-type: space-counter;
+}
+
+.custom-container {
+    gap: 15px;
+    font-size: 40px;
+    display: flex;
+    margin: 0 auto;
+    width: 550px;
+}
+
+.custom-box {
+    background: rgb(146, 27, 27);
+    border: 2px solid #034124;
+    flex: 1;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.custom-header {
+    width: 400px;
+    font-size: 28px;
+    font-weight: 800;
+    background-color: rgb(153, 160, 9);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-subheader {
+    width: 400px;
+    font-size: 28px;
+    font-weight: 800;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cross {
+    list-style-type: cross;
+}
+
+.custom-title {
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.custom-text {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.custom-title-2 {
+    display: flex;
+    font-weight: 900;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.custom-text-2 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.custom-info {
+    font-size: 22px;
+    color: rgb(148, 148, 148);
+}
+
+.custom-muted-text {
+    font-size: 20px;
+    color: rgb(112, 112, 112);
+}
+
+.custom-label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.custom-strong-label {
+    color: rgb(181, 59, 59);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.custom-muted-label {
+    font-size: 18px;
+    color: rgb(112, 112, 112);
+}
+
+  

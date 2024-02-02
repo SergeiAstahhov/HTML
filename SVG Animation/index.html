@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pildid 3: SVG maja</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body style="text-align: center;">
+  <div class="ram">
+    <svg width="800px" height="800px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <linearGradient id="sunsetGradient"
+                        x1="0%" y1="0%"
+                        x2="50%" y2="100%"
+                        spreadMethod="pad">
+          <stop offset="0%"   stop-color="#FFA540" stop-opacity="1" />
+          <stop offset="100%" stop-color="#191970" stop-opacity="1" />
+        </linearGradient>
+ 
+        <linearGradient id="grassGradient"
+                        x1="0%" y1="20%"
+                        x2="50%" y2="80%"
+                        spreadMethod="pad">
+          <stop offset="0%"   stop-color="#E0FFFF" stop-opacity="1" />
+          <stop offset="100%" stop-color="#696969" stop-opacity="1" />
+        </linearGradient>
+      </defs>
+ 
+ 
+      <rect x="0" y="0" width="800" height="400" style="fill:url(#sunsetGradient);" />
+ 
+      <rect x="0" y="400" width="800" height="400" style="fill:url(#grassGradient);" />
+ 
+      <circle cx="50" cy="50" r="40" fill="#FFFF00" stroke="#FFA500" stroke-width="5">
+        <animateTransform
+            attributeName="transform"
+            begin="0s"
+            dur="5s"
+            type="rotate"
+            from="0 60 60"
+            to="360 60 60"
+            repeatCount="indefinite"
+        />
+      </circle>
+      <rect x="350" y="320" height="62" width="16"  style="stroke:#adadad; fill:#adadad; stroke-width: 2;"/>
+      <!-- katus -->
+      <!-- points="x,y x,y ..."  -->
+      <polyline id="katus" points="325,405 392,320 465,405"/>
+ 
+      <!-- sein -->
+      <path d="M400,800 Q400,750 410,700 T500,600 T450,497 T400,455"
+      style="fill: none;
+             stroke: #c1dec2;
+             stroke-width: 20;" />
+ 
+             <image x="0" y="0" width="40" height="30"
+             style=" fill: none;" xlink:href="run.png">
+           <animateMotion
+                   path="M400,800 Q400,750 410,700 T500,600 T450,497 T400,455"
+                   begin="0s" dur="10s" repeatCount="indefinite"
+                   rotate="auto"
+                   />
+    </image>
+ 
+      <rect x="345" y="405" height="80" width="100"  style="stroke:#2933a2; fill:#172769"/>
+      <rect x="407" y="425" height="62" width="28"  style="stroke:#ffffff; fill:#adadad; stroke-width: 2;"/>
+      
+      
+ 
+      <!-- uks -->
+ 
+      <!-- aken -->
+ 
+      <!-- uksenupp -->
+      <circle cx="370" cy="435" r="17" style="stroke:#7c7d1b; fill:#0ebbf0; stroke-width: 3;" />
+ 
+      <circle cx="428" cy="460" r="2" style="stroke:#dec53d; fill:#31ac2b; stroke-width: 3;" />
+ 
+    </svg>
+  </div>
+</body>
+ 
+</html>
